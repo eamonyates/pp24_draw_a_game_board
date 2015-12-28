@@ -1,4 +1,4 @@
-def gameBoard(width=3, height=3):
+def gameBoard(width, height):
 	
 	horizontal = ' ---'
 	vertical = '|'
@@ -14,4 +14,6 @@ def gameBoard(width=3, height=3):
 
 
 if __name__ == '__main__':
-	gameBoard()
+	userWidth = int(input('How WIDE would you like the game board to be: '))
+	userHeight = int(input('How HIGH would you like the game board to be: '))
+	gameBoard(userWidth, userHeight)
