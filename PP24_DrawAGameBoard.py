@@ -4,13 +4,11 @@ def gameBoard(width=3, height=3):
 	vertical = '|'
 	middle = '   '
 
-	topRow = \
-		(horizontal * width) + \
-		'\n' + vertical + ((middle + vertical) * width) + \
-		'\n' + (horizontal * width)
 	otherRow = \
 		'\n' + vertical + ((middle + vertical) * width) + \
 		'\n' + (horizontal * width)
+
+	topRow = (horizontal * width) + otherRow
 	
 	print (topRow + ((otherRow) * (height - 1)))
 
